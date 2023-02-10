@@ -21,16 +21,3 @@ student:
    age: 25
    address: heavenTest
 ...
-   
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
-#  endpoint:
-#     refresh:
-#       enabled: true     
-#spring:
-#   cloud:
-#      config:
-#         allow-override: true
