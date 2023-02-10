@@ -4,7 +4,7 @@ student:
    address: heavenDev
 eureka:
    client:
-     fetch-registry: false
-     register-with-eureka: true
-     service-url:
-        defaultZone: http://localhost:8889/eureka
+      fetch-registry: false
+      register-with-eureka: true
+      service-url:
+         defaultZone: http://localhost:8889/eureka
