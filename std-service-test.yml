@@ -2,3 +2,9 @@ student:
    name: test123
    age: 24
    address: heaventest
+eureka:
+   client:
+     fetch-registry: false
+     register-with-eureka: true
+     service-url:
+        defaultZone: http://localhost:8889/eureka
