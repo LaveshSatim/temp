@@ -1,7 +1,7 @@
 student:
-   name: lavesh
-   age: 25
-   address: thane
+   name: l
+   age: 2
+   address: ne
 
 management:
   endpoints:
