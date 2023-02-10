@@ -2,3 +2,8 @@ student:
    name: megha
    age: 27
    address: thane
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
