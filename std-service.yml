@@ -1,86 +1,23 @@
-#spring:
-#   jpa:
-#      database: mysql
-#      show-sql: true
-#      hibernate:
-#         ddl-auto: update
-#   datasource:
-#      platform: mysql
-#      url: jdbc:mysql://localhost:3306/myapp
-#      username: root
-#      password: root
-#      driverClassName: com.mysql.cj.jdbc.Driver
-#myapp:
-#   storeid: c7c7
-#   storename: rajarani
-#   storelocation: mumbai
-# spring.config.activate.on-profile=
----
+...
 spring:
    config:
-      activate:
-         on-profile: default
-   jpa:
-      database: mysql
-      show-sql: true
-      hibernate:
-         ddl-auto: update
-   datasource:
-      platform: mysql
-      url: jdbc:mysql://localhost:3306/myapp
-      username: root
-      password: root
-      driverClassName: com.mysql.cj.jdbc.Driver
-myapp:
-   storeid: c7c7
-   storename: rajarani default
-   storelocation: mumbai
+     active:
+       on-profile: dev
 
-...
+student:
+   name: dev123
+   age: 24
+   address: heavenDev
 
----
+
+
 spring:
    config:
-      activate:
-         on-profile: test
-   jpa:
-      database: mysql
-      show-sql: true
-      hibernate:
-         ddl-auto: update
-   datasource:
-      platform: mysql
-      url: jdbc:mysql://localhost:3306/myapp
-      username: root
-      password: root
-      driverClassName: com.mysql.cj.jdbc.Driver
-myapp:
-   storeid: gdfggf
-   storename: fasni test
-   storelocation: thane
+     active:
+       on-profile: test
 
-...
-
+student:
+   name: test123
+   age: 25
+   address: heavenTest
 ---
-spring:
-   config:
-      activate:
-         on-profile: dev
-   jpa:
-      database: mysql
-      show-sql: true
-      hibernate:
-         ddl-auto: update
-   datasource:
-      platform: mysql
-      url: jdbc:mysql://localhost:3306/myapp
-      username: root
-      password: root
-      driverClassName: com.mysql.cj.jdbc.Driver
-myapp:
-   storeid: c54c7fsdf
-   storename: god dev
-   storelocation: pune
-
-...
-
