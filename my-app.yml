@@ -1,9 +1,4 @@
-spring:
-   jpa:
-      database: mysql
-      show-sql: true
-      hibernate:
-         ddl-auto: update
+name: lavesh
 #   datasource:
 #      platform: mysql
 #      url: jdbc:mysql://localhost:3306/myapp
