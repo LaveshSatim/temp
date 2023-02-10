@@ -11,3 +11,7 @@ management:
   endpoint:
      refresh:
        enabled: true     
+spring:
+   cloud:
+      config:
+         allow-override: true
