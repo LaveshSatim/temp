@@ -8,9 +8,9 @@ student:
    name: dev123
    age: 24
    address: heavenDev
+---
 
-
-
+...
 spring:
    config:
      active:
