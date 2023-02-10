@@ -1,4 +1,4 @@
----
+
 spring:
    config:
      active:
@@ -8,9 +8,9 @@ student:
    name: dev123
    age: 24
    address: heavenDev
-...
 
----
+
+
 spring:
    config:
      active:
@@ -20,4 +20,3 @@ student:
    name: test123
    age: 25
    address: heavenTest
-...
