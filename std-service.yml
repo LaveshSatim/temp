@@ -1,17 +1,36 @@
-student:
-   name: mokshi1234578
-   age: 2221234578
-   address: heaven1234578
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-     refresh:
-       enabled: true     
+...
 spring:
-   cloud:
-      config:
-         allow-override: true
+   config:
+     active:
+       on-profile: dev
+
+student:
+   name: dev123
+   age: 24
+   address: heavenDev
+---
+
+
+...
+spring:
+   config:
+     active:
+       on-profile: test
+
+student:
+   name: test123
+   age: 25
+   address: heavenTest
+---
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#     refresh:
+#       enabled: true     
+#spring:
+#   cloud:
+#      config:
+#         allow-override: true
