@@ -10,3 +10,16 @@ eureka:
          defaultZone: http://localhost:8889/eureka, http://localhost:8859/eureka
    instance:
       instance-id: ${spring.application.name}:${instanceId:${random.value}}
+spring:
+  datasource:
+    url: jdbc:h2:file:~/students;AUTO_SERVER=true
+    username: root
+    password: root
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
