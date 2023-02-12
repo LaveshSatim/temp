@@ -29,3 +29,9 @@ server:
    error:
       include-message: always
       include-binding-errors: always
+      
+axon:
+   eventhandling:
+     processors:
+       lookup-group:
+         mode: subscribing
